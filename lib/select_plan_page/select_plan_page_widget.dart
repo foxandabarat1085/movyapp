@@ -1,3 +1,4 @@
+import '/components/separator_widget_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -51,31 +52,36 @@ class _SelectPlanPageWidgetState extends State<SelectPlanPageWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primary,
-          automaticallyImplyLeading: false,
-          title: Text(
-            'Page Title',
-            style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Outfit',
-                  color: Colors.white,
-                  fontSize: 22.0,
-                ),
-          ),
-          actions: [],
-          centerTitle: false,
-          elevation: 2.0,
-        ),
         body: SafeArea(
           top: true,
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Text(
-                'Test',
-                style: FlutterFlowTheme.of(context).bodyMedium,
-              ),
-            ],
+          child: Align(
+            alignment: AlignmentDirectional(-1.00, 0.00),
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  'Test',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Readex Pro',
+                        fontSize: 30.0,
+                      ),
+                ),
+                Align(
+                  alignment: AlignmentDirectional(0.00, 0.00),
+                  child: Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
+                    child: wrapWithModel(
+                      model: _model.separatorWidgetModel,
+                      updateCallback: () => setState(() {}),
+                      child: SeparatorWidgetWidget(),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

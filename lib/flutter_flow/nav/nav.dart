@@ -42,9 +42,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const HomePageWidget(),
         ),
         FFRoute(
-          name: 'Page2',
-          path: '/page2',
-          builder: (context, params) => const Page2Widget(),
+          name: 'SelectPlanPage',
+          path: '/selectPlanPage',
+          builder: (context, params) => const SelectPlanPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

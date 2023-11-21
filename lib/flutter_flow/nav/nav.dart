@@ -47,6 +47,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'HomePage',
           path: '/homePage',
           builder: (context, params) => HomePageWidget(),
+        ),
+        FFRoute(
+          name: 'SelectPlanPage',
+          path: '/selectPlanPage',
+          builder: (context, params) => SelectPlanPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

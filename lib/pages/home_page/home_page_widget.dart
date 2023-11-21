@@ -278,16 +278,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                     Spacer(),
                     FFButtonWidget(
-                      onPressed: () async {
-                        context.pushNamed(
-                          'Page2',
-                          extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
-                              hasTransition: true,
-                              transitionType: PageTransitionType.fade,
-                            ),
-                          },
-                        );
+                      onPressed: () {
+                        print('Button pressed ...');
                       },
                       text: 'Ver los planes',
                       options: FFButtonOptions(

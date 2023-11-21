@@ -1,3 +1,4 @@
+import '/components/on_tap_action_widget_test_widget.dart';
 import '/components/separator_widget_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -116,6 +117,11 @@ class _SelectPlanPageWidgetState extends State<SelectPlanPageWidget> {
                       child: SeparatorWidgetWidget(),
                     ),
                   ),
+                ),
+                wrapWithModel(
+                  model: _model.onTapActionWidgetTestModel,
+                  updateCallback: () => setState(() {}),
+                  child: OnTapActionWidgetTestWidget(),
                 ),
               ],
             ),

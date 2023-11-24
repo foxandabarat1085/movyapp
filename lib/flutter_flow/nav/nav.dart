@@ -52,6 +52,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'SelectPlanPage',
           path: '/selectPlanPage',
           builder: (context, params) => SelectPlanPageWidget(),
+        ),
+        FFRoute(
+          name: 'form',
+          path: '/form',
+          builder: (context, params) => FormWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

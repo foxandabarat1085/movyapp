@@ -281,8 +281,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                       child: FFButtonWidget(
-                        onPressed: () {
-                          print('Button pressed ...');
+                        onPressed: () async {
+                          context.pushNamed('form');
                         },
                         text: 'Ver los planes',
                         options: FFButtonOptions(
